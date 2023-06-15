@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenair{
+    background-color: #3D087B;
+    height: 100vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:  repeat(4 , auto);
+    gap: 20px;
+    justify-content: center;
+}
+.whatch-img{
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+.live-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 350px;
+}
+.blank01{
+    width: 300px;
+    position: relative;
+    bottom: 15px;     
+    z-index: 4;
+    /* background-color: rgb(237, 237, 237); */
+    text-align: center;
+    opacity: 0.99;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+
+}
+.blank02{
+    height: 40px;
+    position: absolute;
+    top: 7px;
+    width: 260px;
+    opacity: 0.8;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    border-radius: 5px;
+    background-color: #F6E2FF;
+
+}
+.blank03{
+    background-color:#EDEDED;
+    width: 320px;
+    height: 50px;
+    position: absolute;
+    /* top:px; */
+    bottom: 50px;
+    width: 220px;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.from-con{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    height: 200px;
+    display: grid;
+    background-color: #FFFFFF;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+label{
+    color: #9140B5;
+}
+select{
+    width: 180px;
+    color: #9140B5;
+}
+.timingfonction{
+    grid-column: 2/3;
+    margin-top: 20px;
+    grid-row: 2/3;
+    width: 350px;
+    height: 50px;
+    color: #8E53F0;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+}
+.time{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    background-color: #b997e0de;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.bg-img{
+    grid-column: 2/3;
+    grid-row: 3/6;
+    height: 280px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn-tex{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+.bg{
+    width: 350px;
+    height: 400px;
+}
+button{
+    width: 190px;
+    height: 40px;
+    background-image: linear-gradient(to right, #be25f5,#FC5EFF);
+}
+.text{
+    display: inline-block;
+
+    background-color: #b95ebfbc;
+    width: 200px;
+    height: 80px;
+    color: #F25CFE;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+} 
+
+#Good-Wishes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank01{
+    /* width: 250px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    /* margin: 50px; */
+}
+
+.hours{
+    width: 40px;
+    height: 40px;
+    background-image: url(./hrs.png);
+}
+.ampm{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-image: url(./ampm.png);
+}
+.time00{
+    color: #8E53F0;
+}
+
+
+@media (min-width:300px) and (max-width:600px){
+    .contenair{
+        background-color: #3D087B;
+        height: 300vh;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(8 , auto);
+    }
+    .whatch-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .live-timer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 350px;
+    }
+    .blank01{
+        width: 300px;
+        height: 55px;
+    }
+    .blank02{
+        height: 40px;
+        width: 260px;
+        top: 100px;
+    }
+    .blank03{
+        height: 50px;
+        width: 220px;
+        top: 95px;
+    }
+    .from-con{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .timingfonction{
+        grid-column: 1/2;
+        margin-top: 20px;
+        grid-row: 3/4;
+    }
+    .time{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 400px;
+        height: 70px;
+       
+    }
+    .btn-tex{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .bg-img{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        height: 280px;
+        width: 380px;
+    }
+} 
+
